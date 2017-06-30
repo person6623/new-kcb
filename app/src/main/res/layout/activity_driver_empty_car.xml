@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#111B43">
+
+        <LinearLayout
+            android:id="@+id/driver_enpty_car_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/top_left_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/driver_enpty_car_all_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="空车师傅列表"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/driver_empty_null_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/driver_empty_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/driver_empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driver_empty_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="您暂时还没有设置空车信息哦~" />
+
+        <TextView
+            android:id="@+id/driver_empty_setting_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driver_empty_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tv_orange_frame_white_bg"
+            android:padding="10dp"
+            android:text="立即设置"
+            android:textColor="#F9AA6A" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="分享到朋友圈让用户自动上门"
+            android:textColor="#F89723"
+            android:textSize="17sp" />
+
+        <com.kcb360.newkcb.xlistviewaliter.XListView
+            android:id="@+id/driver_empty_xlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#FFFFFF"
+            android:dividerHeight="0dp"></com.kcb360.newkcb.xlistviewaliter.XListView>
+    </LinearLayout>
+</LinearLayout>

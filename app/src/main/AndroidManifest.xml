@@ -1,0 +1,143 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kcb360.newkcb">
+
+    <!--联网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--写入-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--创建-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--状态权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+
+
+        <!--高德地图鉴权-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/map_key"></meta-data>
+        <!--定位服务-->
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <!--不清楚是否有用-->
+            <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.HomePageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CustomerIssueOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.InMapSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.StandCarListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SeekStandCarActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CustomerOrderListAcvity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DriverCharterSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DriverIssueEmptyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DriverEmptyCarListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CustomerIssueSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PossibleRegionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DriverCharterSettingListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.UserPurseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.BalancePurseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.BankCardManageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CouponActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.TradeNotesAcitivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.WithDrawCashActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.RegistActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

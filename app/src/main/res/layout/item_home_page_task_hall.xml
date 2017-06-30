@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_home_page_task_hall_all_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/item_home_page_task_hall_st_place_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/item_home_page_task_hall_st_place_tv"
+                android:drawablePadding="5dp"
+                android:text="起点:" />
+
+            <TextView
+                android:id="@+id/item_home_page_task_hall_ed_place_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/item_home_page_task_hall_ed_place_tv"
+                android:drawablePadding="5dp"
+                android:text="终点" />
+
+            <TextView
+                android:id="@+id/item_home_page_task_hall_st_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/item_home_page_task_hall_st_time_tv"
+                android:drawablePadding="5dp"
+                android:text="起点时间" />
+
+            <TextView
+                android:id="@+id/item_home_page_task_hall_ed_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/item_home_page_task_hall_st_time_tv"
+                android:drawablePadding="5dp"
+                android:text="终点时间" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_home_page_task_hall_state_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_home_page_task_hall_all_ll"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/ic_launcher" />
+    </RelativeLayout>
+</LinearLayout>

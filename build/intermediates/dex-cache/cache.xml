@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/xinshichao/NewKcb/app/libs/AMap2DMap_4.2.0_AMapSearch_5.1.0_AMapLocation_3.4.0_20170517.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00f48e51e2e7a77516254f54e66a0cc0cd791e92">
+        <dex dex="/Users/xinshichao/NewKcb/app/build/intermediates/pre-dexed/debug/AMap2DMap_4.2.0_AMapSearch_5.1.0_AMapLocation_3.4.0_20170517_0f6748fcf4645e3d124a2c2ab300cba785bd57fe.jar" />
+    </item>
+
+</items>

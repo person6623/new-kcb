@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#111B43">
+
+        <LinearLayout
+            android:id="@+id/driver_issue_empty_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/top_left_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/driver_issue_empty_all_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布空车信息"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_car_plate_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_title_car_plate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="车牌号 " />
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_title_car_plate_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/driver_issue_empty_car_plate_et"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@+id/driver_issue_empty_title_car_plate_tv"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@null"-->
+                <!--android:gravity="right"-->
+                <!--android:hint="请输入车牌号"-->
+                <!--android:maxLength="7"-->
+                <!--android:maxLines="1"-->
+                <!--android:textColorHint="#D2D2D2"-->
+                <!--android:textSize="15sp" />-->
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_car_size_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_title_car_size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="座位数 " />
+
+                <EditText
+                    android:id="@+id/driver_issue_empty_car_size_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_title_car_size_tv"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/driver_issue_empty_car_size_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入座位数"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_car_size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_title_car_size_tv"
+                    android:layout_alignParentRight="true"
+                    android:text=" 座" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/driver_issue_empty_car_nature_all_rl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/driver_issue_empty_title_car_nature_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@mipmap/ask_order_front_costomer_num"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:text="车辆性质 " />-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/driver_issue_empty_car_nature_sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/driver_issue_empty_title_car_nature_tv"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="right"></Spinner>-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.7dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="#D2D2D2" />-->
+
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/driver_issue_empty_car_config_all_rl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/driver_issue_empty_title_car_config_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@mipmap/ask_order_front_costomer_num"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:text="车辆配置 " />-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/driver_issue_empty_car_config_sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/driver_issue_empty_title_car_config_tv"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="right"></Spinner>-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.7dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="#D2D2D2" />-->
+
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/driver_issue_empty_car_phone_all_rl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/driver_issue_empty_title_car_phone_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@mipmap/ask_order_rear_phone"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:text="手机号 " />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/driver_issue_empty_car_phone_et"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/driver_issue_empty_title_car_phone_tv"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="right"-->
+            <!--android:hint="请输入手机号"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="11"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColorHint="#D2D2D2"-->
+            <!--android:textSize="15sp" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.7dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="#D2D2D2" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_stay_city_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_issue_empty_stay_city_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/driver_issue_empty_stay_city_add_iv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/driver_issue_empty_stay_city_tv"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="待命地点 " />
+
+                    <TextView
+                        android:id="@+id/driver_issue_empty_stay_city_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/driver_issue_empty_stay_city_add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_stay_city_ll"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ask_order_go_iv" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_scope_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/driver_issue_empty_scope_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@mipmap/driver_issue_empty_scope_tv"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="范围" />
+
+                    <TextView
+                        android:id="@+id/driver_issue_empty_scope_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_region_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/driver_issue_empty_region_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="可跑范围及不跑区域" />
+
+                    <TextView
+                        android:id="@+id/driver_issue_empty_region_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_st_time_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_issue_empty_st_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/driver_issue_empty_st_time_add_iv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@mipmap/ask_order_front_st_time"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="开始时间 " />
+
+                    <TextView
+                        android:id="@+id/driver_issue_empty_st_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/driver_issue_empty_st_time_add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_st_time_ll"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ask_order_go_iv" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_ed_time_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_issue_empty_ed_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/driver_issue_empty_ed_time_add_iv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/ask_order_front_ed_time"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="结束时间 " />
+
+                    <TextView
+                        android:id="@+id/driver_issue_empty_ed_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/driver_issue_empty_ed_time_add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_ed_time_ll"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ask_order_go_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_out_scope_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_title_out_scope_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@mipmap/driver_issue_empty_out_scope_et"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="超范围公里数 " />
+
+                <EditText
+                    android:id="@+id/driver_issue_empty_out_scope_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_title_out_scope_tv"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/driver_issue_empty_out_scope_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入公里数"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_out_scope_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_title_out_scope_tv"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom"
+                    android:inputType="numberDecimal"
+                    android:text=" 公里" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <RelativeLayout
+                android:id="@+id/driver_issue_empty_unit_price_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_title_unit_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@mipmap/ask_order_rear_quote_et"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="超范围单价 " />
+
+                <EditText
+                    android:id="@+id/driver_issue_empty_unit_price_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_title_unit_price_tv"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/driver_issue_empty_unit_price_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入超范围单价"
+                    android:maxLines="1"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_issue_empty_unit_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_issue_empty_title_unit_price_tv"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom"
+                    android:text=" 元/公里" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/driver_issue_empty_sub_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_orange_arc_bg"
+                android:text="发    布"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

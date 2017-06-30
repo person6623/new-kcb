@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/xlv_item_with_draw_cash_left_tv"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/xlv_item_with_draw_cash_all_ll"
+            android:layout_alignTop="@+id/xlv_item_with_draw_cash_all_ll"
+            android:background="@drawable/custom_red_left_bg" />
+
+        <RelativeLayout
+            android:id="@+id/xlv_item_with_draw_cash_all_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/xlv_item_with_draw_cash_left_tv"
+            android:paddingBottom="15dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/xlv_item_with_draw_cash_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="押金"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/xlv_item_with_draw_cash_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="收入" />
+
+            <TextView
+                android:id="@+id/xlv_item_with_draw_cash_note_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xlv_item_with_draw_cash_type_tv"
+                android:layout_marginTop="5dp"
+                android:text="备注"
+                android:textColor="#CBCBCB" />
+
+            <TextView
+                android:id="@+id/xlv_item_with_draw_cash_atime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xlv_item_with_draw_cash_type_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/xlv_item_with_draw_cash_note_tv"
+                android:text="4-27 03:00"
+                android:textColor="#CBCBCB" />
+
+            <TextView
+                android:id="@+id/xlv_item_with_draw_cash_amoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/xlv_item_with_draw_cash_type_tv"
+                android:layout_marginTop="5dp"
+                android:text="2,000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

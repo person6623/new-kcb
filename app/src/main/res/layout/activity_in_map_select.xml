@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/in_map_select_all_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#111B43">
+
+        <LinearLayout
+            android:id="@+id/in_map_select_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/top_left_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/in_map_select_all_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择地点"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/in_map_select_place_sub_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_white_frame_blue_bg"
+            android:padding="5dp"
+            android:text="完成"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/in_map_select_place_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/et_arc_gray_frame_white_bg"
+            android:hint="请输入地名或景点名"
+            android:padding="5dp"
+            android:textColorHint="#D2D2D2"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.amap.api.maps2d.MapView
+                android:id="@+id/in_map_select_mv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.amap.api.maps2d.MapView>
+
+            <com.kcb360.newkcb.xlistviewaliter.XListView
+                android:id="@+id/in_map_select_xlv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:visibility="gone"></com.kcb360.newkcb.xlistviewaliter.XListView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/in_map_select_del_fmarer_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/btn_red_arc"
+                    android:padding="2dp"
+                    android:text="删除\n标一"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/in_map_select_del_smarer_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/btn_red_arc"
+                    android:padding="2dp"
+                    android:text="删除\n标二"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/in_map_select_del_tmarer_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_red_arc"
+                    android:padding="2dp"
+                    android:text="删除\n标三"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

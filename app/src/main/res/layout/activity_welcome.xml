@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/welcome_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/welcome_timer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/gray_arc_frame_white_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/welcome_jump_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/gray_arc_frame_white_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="跳过" />
+</RelativeLayout>

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#111B43">
+
+        <LinearLayout
+            android:id="@+id/driver_charter_setting_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/top_left_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="包车价格设置"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/driver_charter_setting_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/driver_charter_setting_normal_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#999999"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="正常区域"
+            android:textSize="17sp" />
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/driver_charter_setting_special_area_rb"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/btn_select_white_to_gray_bg"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="特殊区域"-->
+        <!--android:textSize="17sp" />-->
+
+        <RadioButton
+            android:id="@+id/driver_charter_setting_special_scenic_spot_area_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_select_white_to_gray_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="特殊景区"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#999999" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_stay_city_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_stay_city_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_stay_city_add_iv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_position_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/ask_order_front_st_place"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="待命城市" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_stay_city_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/driver_charter_setting_stay_city_add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_charter_setting_stay_city_ll"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ask_order_go_iv" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_seats_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_seats_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="车辆大小" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/driver_charter_setting_seats_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_seats_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入座位数"
+                    android:inputType="number"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_charter_setting_seats_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text=" 座" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_consume_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_consume_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="公里油耗" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/driver_charter_setting_consume_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_consume_tv"
+                    android:background="@null"
+                    android:gravity="bottom|right"
+                    android:hint="请输入每公里油耗"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_charter_setting_consume_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="numberDecimal"
+                    android:text=" 元/公里" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_day_km_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_day_km_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="日公里数" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_charter_setting_day_km_ll">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_km_et"
+                        android:text="50公里以下" />
+
+                    <EditText
+                        android:id="@+id/driver_charter_setting_day_km_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_km_add_tv"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入日价格"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#D2D2D2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_day_km_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=" 元/日" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/driver_charter_setting_day_one_h_km_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/driver_charter_setting_day_km_ll">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_one_h_km_et"
+                        android:text="100公里以下" />
+
+                    <EditText
+                        android:id="@+id/driver_charter_setting_day_one_h_km_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_one_h_km_add_tv"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入日价格"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#D2D2D2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_day_one_h_km_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=" 元/日" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/driver_charter_setting_day_one_half_h_km_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/driver_charter_setting_day_one_h_km_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_one_half_h_km_et"
+                        android:text="150公里以下" />
+
+                    <EditText
+                        android:id="@+id/driver_charter_setting_day_one_half_h_km_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_one_half_h_km_add_tv"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入日价格"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#D2D2D2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_day_one_half_h_km_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=" 元/日" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/driver_charter_setting_day_twe_h_km_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/driver_charter_setting_day_one_half_h_km_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_twe_h_km_et"
+                        android:text="200公里以下" />
+
+                    <EditText
+                        android:id="@+id/driver_charter_setting_day_twe_h_km_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_twe_h_km_add_tv"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入日价格"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#D2D2D2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_day_twe_h_km_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=" 元/日" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/driver_charter_setting_day_twe_half_h_km_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/driver_charter_setting_day_twe_h_km_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_twe_half_h_km_et"
+                        android:text="250公里以下" />
+
+                    <EditText
+                        android:id="@+id/driver_charter_setting_day_twe_half_h_km_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_twe_half_h_km_add_tv"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入日价格"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#D2D2D2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_day_twe_half_h_km_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=" 元/日" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/driver_charter_setting_day_three_h_km_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/driver_charter_setting_day_twe_half_h_km_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_three_h_km_et"
+                        android:text="300公里以下" />
+
+                    <EditText
+                        android:id="@+id/driver_charter_setting_day_three_h_km_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_three_h_km_add_tv"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入日价格"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#D2D2D2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_day_three_h_km_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=" 元/日" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/driver_charter_setting_day_three_half_h_km_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/driver_charter_setting_day_three_h_km_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_three_half_h_km_et"
+                        android:text="350公里以下" />
+
+                    <EditText
+                        android:id="@+id/driver_charter_setting_day_three_half_h_km_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/driver_charter_setting_day_three_half_h_km_add_tv"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请输入日价格"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#D2D2D2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_day_three_half_h_km_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=" 元/日" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_out_scope_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_out_scope_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="接送免费范围" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/driver_charter_setting_out_scope_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_km_out_scope_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入公里数"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_charter_setting_km_out_scope_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text=" 公里" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_km_price_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_km_price_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="超出免费范围单价" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/driver_charter_setting_km_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_km_price_add_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入每公里单价"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_charter_setting_km_price_add_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text=" 元/公里" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_st_time_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_st_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_st_time_add_iv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@mipmap/ask_order_front_st_time"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="开始时间" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_st_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/driver_charter_setting_st_time_add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/driver_charter_setting_st_time_ll"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ask_order_go_iv" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_ed_time_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_ed_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_ed_time_add_iv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/ask_order_front_ed_time"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="结束时间" />
+
+                    <TextView
+                        android:id="@+id/driver_charter_setting_ed_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/driver_charter_setting_ed_time_add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ask_order_go_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/driver_charter_setting_day_off_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/driver_charter_setting_day_off_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@mipmap/ask_order_front_costomer_num"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="假日上浮比例" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/driver_charter_setting_day_off_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/driver_charter_setting_day_off_tv"
+                    android:background="@null"
+                    android:gravity="bottom|right"
+                    android:hint="请填入假日上浮比"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/driver_charter_setting_day_off_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:text=" %" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/driver_charter_setting_sub_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_orange_arc_bg"
+                android:text="下一步"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="说明:计算器价格仅供参考,不作为实际租车价格!"
+                android:textColor="#D2D2D2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

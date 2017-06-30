@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">新客车帮</string>
+
+    <!--XListView用-->
+    <string name="hello">Hello World, XListViewActivity!</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!--高德poi类型-->
+    <string name="poi_type">"汽车服务|汽车销售|汽车维修|摩托车服务|" +
+                "餐饮服务|购物服务|生活服务|体育休闲服务|医疗保健服务|住宿服务|风景名胜|商务住宅|政府机构及社会团体|" +
+                "科教文化服务|交通设施服务|金融保险服务|公司企业|道路附属设施|地名地址信息|公共设施"</string>
+    <!--高德鉴权-->
+    <string name="map_key">1cf1d117bef19bf290da486f8211f651</string>
+
+    <!--账号密码限制-->
+    <string name="number_or_letter">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.</string>
+    <!--用车发布成功提示-->
+    <string name="customer_issue_success">友情提示:80%1$的用车纠纷来自于线下交易,\n通过客车帮平台交易将100%1$保障你的用车,\n平台不收取用车方任何手续费用!</string>
+    <string name="customer_issue_deliver">客车帮已为你推荐了125位符合要求的师傅或车队,请等待师傅联系,或进入我的订单选择合适的师傅和车队</string>
+
+    <!--车辆性质-->
+    <string-array name="car_nature">
+        <item>上网旅游车</item>
+        <item>县级包车</item>
+        <item>租赁车</item>
+        <item>其他</item>
+        <item>旅游大巴</item>
+    </string-array>
+
+    <!--车辆配置-->
+    <string-array name="car_config">
+        <item>经济型</item>
+        <item>豪华型</item>
+        <item>商务型</item>
+        <item>燃油型</item>
+    </string-array>
+
+    <!--银行名称spinner-->
+    <string-array name="bank_name">
+        <item>请选择银行</item>
+        <item>建设银行</item>
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>交通银行</item>
+        <item>邮政储蓄</item>
+    </string-array>
+
+    <!--银行名称对应行号-->
+    <string-array name="bank_code">
+        <item>0</item>
+        <item>105100000017</item>
+        <item>102100099996</item>
+        <item>103100000026</item>
+        <item>301290000007</item>
+        <item>403100000004</item>
+    </string-array>
+
+    <!--交易记录type-->
+    <string-array name="trade_notes">
+        <item>0</item>
+        <item>付定金</item>
+        <item>付尾款</item>
+        <item>置顶付费</item>
+        <item>手续费(出租方,押金)</item>
+        <item>租车提成(租车方)</item>
+        <item>租车提成(车主方)</item>
+        <item>赠送红包</item>
+        <item>提现</item>
+        <item>认证提成</item>
+        <item>发单奖励</item>
+        <item>车队车辆管理费(车队：邀请方管理员余额 ；个人余额)</item>
+        <item>押金</item>
+        <item>未完团定金</item>
+        <item>完团定金</item>
+        <item>红包抵扣</item>
+        <item>退定金</item>
+        <item>车队保证金</item>
+        <item>线下收款</item>
+        <item>查看电话扣费</item>
+        <item>短信费用</item>
+        <item>余额转入</item>
+        <item>消费奖金分红</item>
+    </string-array>
+
+    <!--提现状态-->
+    <string-array name="with_draw_cash">
+        <item>未处理</item>
+        <item>已成功</item>
+        <item>已失败</item>
+        <item>撤销(用户操作)</item>
+        <item>已提交银行处理</item>
+        <item>账户异常</item>
+    </string-array>
+</resources>

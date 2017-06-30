@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/ask_order_rear_name_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_rear_name"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="姓名" />
+
+                <EditText
+                    android:id="@+id/ask_order_rear_name_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="请输入姓名"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <LinearLayout
+                android:id="@+id/ask_order_rear_phone_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_front_st_time"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="手机" />
+
+                <EditText
+                    android:id="@+id/ask_order_rear_phone_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="请输入手机号码"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <LinearLayout
+                android:id="@+id/ask_order_rear_quote_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_rear_quote_et"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="报价" />
+
+                <EditText
+                    android:id="@+id/ask_order_rear_quote_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请输入报价"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text=" 元" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <RelativeLayout
+                android:id="@+id/ask_order_rear_invoice_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_rear_invoice"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="不需要发票" />
+
+                <Switch
+                    android:id="@+id/ask_order_rear_invoice_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:checked="false"
+                    android:textOff="无需"
+                    android:textOn="需要" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <RelativeLayout
+                android:id="@+id/ask_order_rear_take_air_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_rear_take_air_sc"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="无团上接送机" />
+
+                <Switch
+                    android:id="@+id/ask_order_rear_take_air_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:checked="false"
+                    android:textOff="无"
+                    android:textOn="有" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+
+            <RelativeLayout
+                android:id="@+id/ask_order_rear_route_out_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ask_order_rear_route_out"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="回城路线不同" />
+
+                <Switch
+                    android:id="@+id/ask_order_rear_route_out_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:checked="false"
+                    android:textOff="相同"
+                    android:textOn="不同" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="5dp"
+                android:background="#D2D2D2" />
+
+            <LinearLayout
+                android:id="@+id/ask_order_rear_route_out_all_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/ask_order_rear_pass_all_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ask_order_rear_pass_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/ask_order_rear_pass_add_iv"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/ask_order_front_pass"
+                            android:drawablePadding="10dp"
+                            android:gravity="bottom"
+                            android:text="途经点" />
+
+                        <TextView
+                            android:id="@+id/ask_order_rear_pass_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ask_order_rear_pass_add_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ask_order_rear_pass_ll"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ask_order_front_pass_add" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D2D2D2" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ask_order_rear_ed_palce_all_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ask_order_rear_ed_palce_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/ask_order_rear_ed_palce_add_iv"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:drawableLeft="@mipmap/ask_order_front_ed_place"
+                            android:drawablePadding="10dp"
+                            android:gravity="bottom"
+                            android:text="终点" />
+
+                        <TextView
+                            android:id="@+id/ask_order_rear_ed_palce_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ask_order_rear_ed_palce_add_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ask_order_go_iv" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D2D2D2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ask_order_rear_reckon_price_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预估车价"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/ask_order_rear_reckon_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="#F89723"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ask_order_rear_details_route_rl"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/ask_order_rear_details_route_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    android:text="请输入详细行程" />
+
+                <EditText
+                    android:id="@+id/ask_order_rear_details_route_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ask_order_rear_details_route_tv"
+                    android:background="@drawable/gray_arc_frame_white_bg"
+                    android:gravity="top"
+                    android:padding="5dp"
+                    android:textColorHint="#999999"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ask_order_rear_seek_null_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ask_order_front_seek_null_iv" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ask_order_rear_price_ask_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_orange_frame_white_bg"
+                    android:text="查询价格"
+                    android:textColor="#F89723"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/ask_order_rear_sub_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_orange_arc_bg"
+                    android:text="发布"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/ask_order_rear_back_to_alter_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="返回修改上一页内容"
+                    android:textColor="#0033FF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ask_order_rear_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="说明:计算器预估价格只能作为参考,不作为实际租车价格! 具体价格请咨询师傅!"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#111B43">
+
+        <LinearLayout
+            android:id="@+id/customer_order_list_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/top_left_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订单列表"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/customer_order_list_all_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/customer_order_list_not_finish_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sc_black_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="未完成订单"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/customer_order_list_success_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="成交订单"
+            android:textSize="17sp" />
+
+
+        <RadioButton
+            android:id="@+id/customer_order_list_overdue_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="过期订单"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#999999" />
+
+    <RadioGroup
+        android:id="@+id/customer_order_list_type_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/customer_order_list_ask_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sc_black_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="询价订单"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/customer_order_list_normal_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="成团订单"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#999999" />
+
+    <com.kcb360.newkcb.xlistviewaliter.XListView
+        android:id="@+id/customer_order_list_xlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFFFFF"
+        android:dividerHeight="5dp"></com.kcb360.newkcb.xlistviewaliter.XListView>
+</LinearLayout>
